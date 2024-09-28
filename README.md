@@ -1,4 +1,4 @@
-# best-games-api
+# Best Games - API
  
 A responsive web application that showcases a list of some of the best games in history.
 Users have the option to view, edit, add, and remove games from the list, making it interactive and customizable.

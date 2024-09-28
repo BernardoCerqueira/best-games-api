@@ -1,0 +1,92 @@
+h1{
+    text-align: center;
+}
+
+.input__field{
+    margin-bottom: 2rem;
+}
+
+form{
+    text-align: center;
+    padding: 10rem;
+    font-size: 30px;
+    margin: auto;
+}
+
+input{
+    width: 10rem;
+    height: 2rem;
+    font-size: 25px;
+    padding: .5rem;
+}
+
+.submit__btn{
+    margin: 1rem auto .5rem auto;
+    padding: .5rem .5rem .7rem .5rem;
+    background-color: rgb(15, 36, 2);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid white;
+    transition: all .4s;
+}
+
+.submit__btn:hover{
+    background-color: rgb(79, 187, 8);
+}
+
+.back__btn{
+    display: block;
+    margin: auto;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    width: 11rem;
+    height: 3rem;
+    font-size: 18px;
+    border: 2px solid white;
+    transition: all .4s;
+}
+
+.back__btn:hover{
+    background-color: rgb(156, 158, 160);
+}
+
+@media (max-width: 1440px){
+    form{
+        padding: 10vw;
+    }
+    .main__title{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 880px){
+    .main__title{
+        font-size: 12vw;
+    }
+}
+
+@media (max-width: 550px){
+    .main__title{
+        font-size: 14vw;
+    }
+    input{
+        font-size: 15px;
+    }
+    .submit__btn{
+        font-size: 15px;
+    }
+    .back__btn{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 340px){
+    .main__title{
+        font-size: 20vw;
+    }
+    input{
+        width: 210px;
+    }
+}

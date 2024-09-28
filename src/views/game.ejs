@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Noto+Sans+Warang+Citi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/game.css">
+    <script src="/scripts/game-script.js" defer></script>
+    <title>Best Games | <%= game.name %></title>
+</head>
+<body>
+    <a href="/"><h1 class="main__title">Best Games</h1></a>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome </th>
+                <th>Ano</th>
+                <th>Gênero(s)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><%= game.name %></td>
+                <td><%= game.year %></td>
+                <td><%= game.genres %></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="btn__div">
+        <button class="edit__btn main__btn" id="edit__btn">Editar</button>
+        <form action="/games/delete/<%= game.id %>" method="post">
+            <button class="delete__btn main__btn">Excluir</button>
+        </form>
+
+        <button class="edit__btn main__btn" id="add-genre-btn">Adicionar Gênero</button>
+        <button class="delete__btn main__btn" id="delete-genre-btn">Excluir Gênero</button>
+    </div>
+    <form action="/games/put/<%= game.id %>" method="post" id="edit-form">
+        
+    </form>
+    <form action="/games/<%= game.id %>/genres" method="post" id="add-genre-form">
+
+    </form>
+    <form action="/games/<%= game.id %>/genres/delete" method="post" id="delete-genre-form"></form>
+        
+    </form>
+    <a href="/games"><button class="main__btn back__btn">Voltar</button></a>
+</body>
+</html>

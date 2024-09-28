@@ -1,0 +1,118 @@
+.main__title{
+    text-align: center;
+}
+
+table{
+    border: 3px solid white;
+    border-spacing: 10px;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th,td{
+    border: 1px solid white;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+
+.main__btn{
+    text-align: center;
+    width: 11rem;
+    height: 3rem;
+    color: white;
+    font-size: 18px;
+    border: 2px solid white;
+    transition: all .4s;
+}
+
+.btn__div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.edit__btn{
+    background-color: rgba(0, 102, 255, 0.404);
+}
+
+.edit__btn:hover{
+    background-color: rgb(0, 102, 255);
+}
+
+.delete__btn{
+    background-color: rgba(255, 0, 0, 0.377);
+}
+
+.delete__btn:hover{
+    background-color: red;
+}
+
+#edit-form, #add-genre-form, #delete-genre-form{
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.send-btn{
+    margin: 1rem auto .5rem auto;
+    padding: .5rem .5rem .7rem .5rem;
+    background-color: rgb(15, 36, 2);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid white;
+    transition: all .4s;
+}
+
+#send-btn:hover{
+    background-color: rgb(79, 187, 8);
+}
+
+.back__btn{
+    display: block;
+    margin: auto;
+    color: black;
+    cursor: pointer;
+}
+
+.back__btn:hover{
+    background-color: rgb(156, 158, 160);
+}
+
+@media(max-width: 600px) {
+    .main__title{
+        font-size: 24vw;
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    th{
+        display: none;
+    }
+    td{
+        text-align: center;
+    }
+    table{
+        width: 90vw;
+    }
+    td:nth-child(1):before{
+        content: "Nome: ";
+        font-weight: bold;
+    }
+    td:nth-child(2):before{
+        content: "Ano: ";
+        font-weight: bold;
+    }
+    td:nth-child(3):before{
+        content: "Gênero(s): ";
+        font-weight: bold;
+    }
+    input{
+        width: 80vw;
+    }
+}

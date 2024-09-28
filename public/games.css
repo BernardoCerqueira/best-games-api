@@ -1,0 +1,39 @@
+.main__title{
+    text-align: center;
+}
+
+.games__container{
+    display: flex;
+    justify-content: center;
+    margin: 2.2rem;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.games__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    padding: 50px;
+    flex-basis: 250px;
+    height: 150px;
+    font-size: 1.3rem;
+    transition: all .4s;
+}
+
+.games__item:hover{
+    background-color: rgba(79, 187, 8, 0.7);
+}
+
+#add-game{
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media (max-width: 420px){
+    .main__title{
+        font-size: 20vw;
+    }
+}

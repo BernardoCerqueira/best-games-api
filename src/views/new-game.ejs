@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Noto+Sans+Warang+Citi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/new-game.css">
+    <title>Best Games | Cadastrar Jogo</title>
+</head>
+<body>
+    <a href="/"><h1 class="main__title">Best Games</h1></a>
+    <form action="/games" method="post">
+            <span class="input__field">
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name">
+            </span>
+            <br>
+    
+            <span class="input__field">
+                <label for="year">Ano: </label>
+                <input type="number" name="year" id="year">
+            </span>
+            <br>
+    
+            <span class="input__field">
+                <label for="genres">Gênero: </label>
+                <input type="text" name="genres" id="genres">
+            </span>
+            <br>
+    
+            <button type="submit" class="submit__btn">Enviar</button>
+    </form>
+    <a href="/games"><button class="back__btn">Voltar</button></a>
+</body>
+</html>
